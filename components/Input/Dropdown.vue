@@ -50,7 +50,6 @@ function updateSelect(){
 <style scoped lang="scss">
 
 .select-block{
-    padding: 8px;
     .select-block__picker{
         .select-block__option[default]{
             display: none;
