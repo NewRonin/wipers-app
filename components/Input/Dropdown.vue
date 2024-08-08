@@ -50,10 +50,31 @@ function updateSelect(){
 <style scoped lang="scss">
 
 .select-block{
+    position: relative;
     .select-block__picker{
+        appearance: none;
+        width: 100%;
+        font-size: 1.15rem;
+        padding: 0.675em 6em 0.675em 1em;
+        background-color: var(--app-white);
+        border: 1px solid var(--app-grey);
+        border-radius: 0.25rem;
+        color: var(--app-black);
+
         .select-block__option[default]{
             display: none;
         }
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        right: 1rem;
+        pointer-events: none;
+        border-left: 0.3rem solid transparent;
+        border-right: 0.3rem solid transparent;
+        border-top: 0.3rem solid var(--app-black);
+        top: 50%;
     }
 }
 
